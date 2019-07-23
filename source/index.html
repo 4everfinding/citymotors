@@ -5,21 +5,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Motors - ремонт карданных валов</title>
     <!-- <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous"> -->
-    <!-- <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous"> -->
+    <link rel="preload" href="fonts/geometriamedium.woff2" as="font" crossorigin="anonymous">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* Mobile layout by default */
+        background-image: url( "img/320.png" );
+      }
+      /* Tablet */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Tablet layout */
+          background-image: url( "img/760.png" );
+        }
+      }
+      /* Desktop */
+      @media ( min-width: 1340px ) {
+        HTML {
+          /* Desktop layout */
+          background-image: url( "img/1340.png" );
+        }
+      }
+    </style>
+    <link href="pixel-glass/styles.css" rel="stylesheet">
+    <script src="pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-<!--     <div style="display: none;">
+    <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
-    </div> -->
-    <header class="main-header">
-      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Проектах, рот дал что необходимыми имеет большого вопроса, свою родного коварный бросил, текст по всей выйти назад заманивший он которое букв?</p>
+    </div>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__top-line">
+          <div class="site-header__logo">
+            <img src="img/logo.png" alt="Логотип компании City Motors" width="185" height="59">
+          </div>
+          <div class="contacts">
+            <div class="contacts__item contacts__item--address">
+              <b>city-motors</b>
+              <p>Реутов, Проспект Мира 56</p>
+            </div>
+            <div class="contacts__item contacts__item--email">
+              <b>email</b>
+              <p><a href="mailto:info@auto-cm.ru">info@auto-cm.ru</a></p>
+            </div>
+            <div class="contacts__item contacts__item--hours">
+              <b>10.00 — 20.00</b>
+              <p>Без выходных</p>
+            </div>
+            <div class="contacts__item contacts__item--phone">
+              <b>Звоните:</b>
+              <p><a href="tel:+74957409185">+7 (495) 740-91-85</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="site-header__middle-line">
+          <nav class="site-header__nav">
+            <ul class="site-header__list">
+              <li class="site-header__item"><a>Главная</a></li>
+              <li class="site-header__item"><a href="#">О компании</a></li>
+              <li class="site-header__item"><a href="#">Услуги</a></li>
+              <li class="site-header__item"><a href="#">Сотрудничество</a></li>
+              <li class="site-header__item"><a href="#">Наши работы</a></li>
+              <li class="site-header__item"><a href="#">Регионам</a></li>
+              <li class="site-header__item"><a href="#">Цены</a></li>
+              <li class="site-header__item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="button button--call">Заказать звонок</a>
+        </div>
+        <div class="row">
+          <div class="site-header__hero hero">
+            <h1 class="hero__heading">Профессиональный ремонт карданных валов</h1>
+            <p class="hero__subheading">В Москве и Московской области </p>
+            <p class="hero__description">Техцентр CITY-MOTORS предлагает широкий спектр услуг, в числе которых ремонт карданных валов в Москве с обязательной диагностикой, определением технических проблем, проведением ремонтно-восстановительных работ и балансировкой</p>
+          </div>
+        </div>
+        <div class="row">
+          <button class="button button--scroll"><span class="visually-hidden">Прокрутите вниз</span></button>
+        </div>
+      </div>
     </header>
 
     <main>
+      <section class="features">
+        <div class="container">
+          <h2>Наши преимущества</h2>
+          <div class="features__list">
+              <div class="features__item">1 год гарантии</div>
+              <div class="features__item">Ремонт в день обращения</div>
+              <div class="features__item">Доставка по всей России</div>
+              <div class="features__item">Современное оборудование</div>
+              <div class="features__item">Ремонт 2-3 часа</div>
+            </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <h2>Наши услуги</h2>
+          <div class="services__list">
+            <div class="services__item">
+              <img src="img/service1.jpg" alt="Ремонт карданов">
+              <p class="services__name">Ремонт карданов</p>
+              <div class="services__details">
+                <p>Ремонт карданов</p>
+                <p>Цены — в зависимости от работ</p>
+                <p>Ремонт в день обращения!</p>
+                <a href="#" class="button button--price">Прайс-лист</a>
+              </div>
+            </div>
+            <div class="services__item">
+              <img src="img/service2.jpg" alt="Балансировка кардана">
+              <p class="services__name">Балансировка кардана</p>
+              <div class="services__details">
+                <p>Балансировка кардана</p>
+                <p>Цены — в зависимости от работ</p>
+                <p>Ремонт в день обращения!</p>
+                <a href="#" class="button button--price">Прайс-лист</a>
+              </div>
+            </div>
+            <div class="services__item">
+              <img src="img/service3.jpg" alt="Замена крестовины">
+              <p class="services__name">Замена крестовины</p>
+              <div class="services__details">
+                <p>Замена крестовины</p>
+                <p>Цены — в зависимости от работ</p>
+                <p>Ремонт в день обращения!</p>
+                <a href="#" class="button button--price">Прайс-лист</a>
+              </div>
+            </div>
+            <div class="services__item">
+              <img src="img/service4.jpg" alt="Изготовление кардана">
+              <p class="services__name">Изготовление кардана</p>
+              <div class="services__details">
+                <p>Изготовление кардана</p>
+                <p>Цены — в зависимости от работ</p>
+                <p>Ремонт в день обращения!</p>
+                <a href="#" class="button button--price">Прайс-лист</a>
+              </div>
+            </div>
+            <div class="services__item">
+              <img src="img/service5.jpg" alt="Удлинение кардана">
+              <p class="services__name">Удлинение кардана</p>
+              <div class="services__details">
+                <p>Удлинение кардана</p>
+                <p>Цены — в зависимости от работ</p>
+                <p>Ремонт в день обращения!</p>
+                <a href="#" class="button button--price">Прайс-лист</a>
+              </div>
+            </div>
+            <div class="services__item">
+              <img src="img/service6.jpg" alt="Укорачивание кардана">
+              <p class="services__name">Укорачивание кардана</p>
+              <div class="services__details">
+                <p>Укорачивание кардана</p>
+                <p>Цены — в зависимости от работ</p>
+                <p>Ремонт в день обращения!</p>
+                <a href="#" class="button button--price">Прайс-лист</a>
+              </div>
+            </div>
+            <div class="services__item">
+              <img src="img/service7.jpg" alt="Замена подшипника">
+              <p class="services__name">Замена подшипника</p>
+              <div class="services__details">
+                <p>Замена подшипника</p>
+                <p>Цены — в зависимости от работ</p>
+                <p>Ремонт в день обращения!</p>
+                <a href="#" class="button button--price">Прайс-лист</a>
+              </div>
+            </div>
+            <div class="services__item">
+              <img src="img/service8.jpg" alt="Шлицевое соединение">
+              <p class="services__name">Шлицевое соединение</p>
+              <div class="services__details">
+                <p>Шлицевое соединение</p>
+                <p>Цены — в зависимости от работ</p>
+                <p>Ремонт в день обращения!</p>
+                <a href="#" class="button button--price">Прайс-лист</a>
+              </div>
+            </div>
+            <div class="services__item">
+              <img src="img/service9.jpg" alt="Замена шруса кардана">
+              <p class="services__name">Замена шруса кардана</p>
+              <div class="services__details">
+                <p>Замена шруса кардана</p>
+                <p>Цены — в зависимости от работ</p>
+                <p>Ремонт в день обращения!</p>
+                <a href="#" class="button button--price">Прайс-лист</a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="button button--services">Посмотреть все услуги</a>
+        </div>
+      </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="site-footer">
     </footer>
     <script src="js/script.js"></script>
   </body>

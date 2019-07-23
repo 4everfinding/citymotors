@@ -20,7 +20,8 @@ var server = require("browser-sync").create();
 
 gulp.task("copy", function() {
   return gulp.src([
-      "source/fonts/**/*.{woff,woff2}"
+      "source/fonts/**/*.{woff,woff2}",
+      "source/pixel-glass/**/*"
     ], {
       base: "source"
     })
@@ -96,7 +97,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
-  // "sprite",
+  "sprite",
   "html",
   "js",
   "images",

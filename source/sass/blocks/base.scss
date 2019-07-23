@@ -1,17 +1,25 @@
 @font-face {
-  font-weight: 400;
-  font-family: "Oswald";
+  font-weight: 500;
+  font-family: "Geometria";
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/geometriamedium.woff2") format("woff2"), url("../fonts/geometriamedium.woff") format("woff");
 }
 
 @font-face {
-  font-weight: 500;
-  font-family: "Oswald";
+  font-weight: 700;
+  font-family: "Geometria";
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  src: url("../fonts/geometriabold.woff2") format("woff2"), url("../fonts/geometriabold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: "Geometria";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/geometriaextrabold.woff2") format("woff2"), url("../fonts/geometriaextrabold.woff") format("woff");
 }
 
 body {
@@ -36,3 +44,5 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
