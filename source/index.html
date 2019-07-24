@@ -4,45 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Motors - ремонт карданных валов</title>
-    <!-- <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous"> -->
     <link rel="preload" href="fonts/geometriamedium.woff2" as="font" crossorigin="anonymous">
-    <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* Mobile layout by default */
-        background-image: url( "img/320.png" );
-      }
-      /* Tablet */
-      @media ( min-width: 768px ) {
-        HTML {
-          /* Tablet layout */
-          background-image: url( "img/760.png" );
-        }
-      }
-      /* Desktop */
-      @media ( min-width: 1340px ) {
-        HTML {
-          /* Desktop layout */
-          background-image: url( "img/1340.png" );
-        }
-      }
-    </style>
-    <!-- <link href="pixel-glass/styles.css" rel="stylesheet"> -->
-    <!-- <script src="pixel-glass/script.js"></script> -->
-    <!-- // Pixel Glass -->
+    <link rel="preload" href="fonts/geometriabold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/geometriaextrabold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div style="display: none;">
-      <include src="build/img/sprite.svg"></include>
-    </div>
     <header class="site-header">
       <div class="container">
         <div class="site-header__top-line">
           <div class="site-header__logo">
-            <img src="img/logo.png" alt="Логотип компании City Motors" width="185" height="59">
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp">
+              <img src="img/logo.png" alt="Логотип компании City Motors" width="185" height="59">
+            </picture>
           </div>
           <div class="contacts">
             <div class="contacts__item contacts__item--address">
@@ -64,17 +39,22 @@
           </div>
         </div>
         <div class="site-header__middle-line">
-          <nav class="site-header__nav">
-            <ul class="site-header__list">
-              <li class="site-header__item"><a>Главная</a></li>
-              <li class="site-header__item"><a href="#">О компании</a></li>
-              <li class="site-header__item"><a href="#">Услуги</a></li>
-              <li class="site-header__item"><a href="#">Сотрудничество</a></li>
-              <li class="site-header__item"><a href="#">Наши работы</a></li>
-              <li class="site-header__item"><a href="#">Регионам</a></li>
-              <li class="site-header__item"><a href="#">Цены</a></li>
-              <li class="site-header__item"><a href="#">Контакты</a></li>
-            </ul>
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+                <li class="main-nav__item"><a href="https://bsnsweb.ru/web-studiya-orenburg/">О компании</a></li>
+                <li class="main-nav__item"><a href="https://bsnsweb.ru/uslugi-web-studii/">Услуги</a></li>
+                <li class="main-nav__item"><a href="https://bsnsweb.ru/kontakty/">Сотрудничество</a></li>
+                <li class="main-nav__item"><a href="https://bsnsweb.ru/sajty-orenburg/">Наши работы</a></li>
+                <li class="main-nav__item"><a href="https://bsnsweb.ru/uslugi-web-studii/">Регионам</a></li>
+                <li class="main-nav__item"><a href="https://bsnsweb.ru/uslugi-web-studii/">Цены</a></li>
+                <li class="main-nav__item"><a href="https://bsnsweb.ru/kontakty/">Контакты</a></li>
+              </ul>
+            </div>
           </nav>
           <a href="#" class="button button--call">Заказать звонок</a>
         </div>
@@ -86,16 +66,16 @@
           </div>
         </div>
         <div class="row">
-          <button class="button button--scroll"><span class="visually-hidden">Прокрутите вниз</span></button>
+          <a href="#main" class="button button--scroll"><span class="visually-hidden">Прокрутите вниз</span></a>
         </div>
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <div class="section-wrapper">
         <section class="features">
           <div class="container">
-            <h2 class="feautures__heading section-heading">Наши преимущества</h2>
+            <h2 class="features__heading section-heading">Наши преимущества</h2>
             <div class="features__list">
                 <div class="features__item features__item--warranty">1 год гарантии</div>
                 <div class="features__item features__item--urgent">Ремонт в день обращения</div>

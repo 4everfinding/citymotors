@@ -61,5 +61,18 @@ img {
   background-image: linear-gradient(to bottom, #071437 0%, rgba(31, 31, 31, 0.5) 100%), url("../../img/bg-main.jpg");
   background-repeat: no-repeat;
   background-position: 0 0, center top;
+  background-size: cover;
 }
 
+@media (max-width: $tablet-width) {
+  .section-heading {
+
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .section-heading {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+}

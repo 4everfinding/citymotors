@@ -1,9 +1,9 @@
 .features {
-  margin-bottom: 120px;
+  margin-bottom: 88px;
 }
 
-.feautures__heading {
-  margin-bottom: 75px;
+.features__heading {
+  margin-bottom: 85px;
 }
 
 .features__list {
@@ -16,6 +16,7 @@
   position: relative;
 
   width: 225px;
+  margin-bottom: 30px;
   padding-top: 185px;
 
   font-size: 17px;
@@ -58,4 +59,21 @@
 
 .features__item--speed::before {
   background-image: url("../../img/icon-feature-speed.svg");;
+}
+
+
+@media (max-width: $tablet-width) {
+  .features__list {
+    // justify-content: flex-start;;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .features {
+    margin-bottom: 30px;
+  }
+
+  .features__item {
+    padding-top: 155px;
+  }
 }
