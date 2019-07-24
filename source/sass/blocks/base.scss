@@ -22,6 +22,10 @@
   src: url("../fonts/geometriaextrabold.woff2") format("woff2"), url("../fonts/geometriaextrabold.woff") format("woff");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -45,4 +49,17 @@ img {
   height: auto;
 }
 
+.section-heading {
+  font-size: 47px;
+  line-height: 59px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-wrapper {
+  padding-bottom: 90px;
+  background-image: linear-gradient(to bottom, #071437 0%, rgba(31, 31, 31, 0.5) 100%), url("../../img/bg-main.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0, center top;
+}
 

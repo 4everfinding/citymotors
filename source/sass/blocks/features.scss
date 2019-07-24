@@ -1,5 +1,61 @@
+.features {
+  margin-bottom: 120px;
+}
+
+.feautures__heading {
+  margin-bottom: 75px;
+}
+
 .features__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.features__item {
+  position: relative;
+
+  width: 225px;
+  padding-top: 185px;
+
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 700;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+
+    content: '';
+
+    width: 135px;
+    height: 135px;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+  }
+}
+
+.features__item--warranty::before {
+  background-image: url("../../img/icon-feature-warranty.svg");;
+}
+
+.features__item--urgent::before {
+  background-image: url("../../img/icon-feature-urgent.svg");;
+}
+
+.features__item--delivery::before {
+  background-image: url("../../img/icon-feature-delivery.svg");;
+}
+
+.features__item--equipment::before {
+  background-image: url("../../img/icon-feature-equipment.svg");;
+}
+
+.features__item--speed::before {
+  background-image: url("../../img/icon-feature-speed.svg");;
 }
